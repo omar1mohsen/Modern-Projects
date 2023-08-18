@@ -10,10 +10,10 @@ function Hero() {
         <img src={heroImage} alt="hero-image" />
       </div>
       <div className="hero-desc ">
-        <h3 className="main-title max-sm:text-lg">
+        <h3 className="main-title max-sm:text-sm">
           AN EGYPTIAN COMPANY THAT PROVIDES
         </h3>
-        <h1 className="sec-title max-sm:text-sm">
+        <h1 className="hero-title max-sm:text-sm !border-[--primary-color]">
           INSPECTION , CONSULTANCY AND <br /> EXPERT SERVICE
         </h1>
       </div>
@@ -25,9 +25,9 @@ function Hero() {
         <div className="right-side  ">
           <div className="hero-bottom-desc  ">
             <div className="left-side max-sm:text-xs ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Delectus, esse. Sit Lorem ipsum dolor sit amet. Lorem ipsum dolor
-              sit amet.
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat…
             </div>
             <div className="right-side ">
               MORE ABOUT US

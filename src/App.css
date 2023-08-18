@@ -11,6 +11,9 @@
     --thr-blue:#2979C7;
 }
 
+*{
+    font-family:  'Poppins', sans-serif;
+    }
 
 
 /*navbar*/
@@ -24,7 +27,7 @@
     @apply   flex text-[--primary-color] px-2 py-1.5 rounded-lg 
 }
 .navLink {
-    @apply xl:px-3 px-1 xl:text-base  md:text-sm opacity-80  uppercase rounded-sm max-md:text-sm max-lg:text-lg py-2 max-lg:text-[--blue-color] relative hover:opacity-100 max-lg:overflow-hidden
+    @apply min-[1291px]:px-3 px-1 xl:text-base  md:text-sm opacity-80 font-light min-[1280px]:px-1.5  uppercase rounded-sm max-md:text-sm max-lg:text-lg py-2 max-lg:text-[--blue-color] relative hover:opacity-100 max-lg:overflow-hidden
 }
 .navLink::before{
     @apply  content-[""] absolute -bottom-[100%] hover:-bottom-3 transition-all rounded-xl duration-200 ease-linear opacity-0 hover:opacity-100  left-0 w-full h-1 bg-[--orange-color] 
@@ -33,7 +36,7 @@
     @apply block opacity-100
 }
 .getInTouch {
-    @apply !h-[100%] hidden lg:flex justify-center items-center text-[--primary-color] bg-[--orange-color] !flex-1 !text-center xl:px-3 px-1 xl:text-base  md:text-sm opacity-80 hover:opacity-100  uppercase rounded-sm max-md:text-sm max-lg:text-lg py-2
+    @apply !h-[100%] hidden lg:flex justify-center items-center text-[--primary-color] bg-[--orange-color] !flex-1 !text-center xl:px-3 px-1 xl:text-base  md:text-sm  uppercase rounded-sm max-md:text-sm max-lg:text-lg py-2
 }
 
 /*hero-sec*/
@@ -46,27 +49,27 @@
 .main-title{
 @apply text-xl md:text-3xl
 }
-.sec-title{
+.hero-title{
     @apply my-2 ps-5 border-s-8 max-sm:text-xs text-2xl  md:text-4xl
 }
 .bottom-hero{
-    @apply text-[--primary-color] max-md:text-xs font-semibold flex justify-between max-md:pe-0 md:w-5/6 h-fit px-6 items-center absolute bottom-0 md:left-0 -left-5
+    @apply text-[--primary-color]  max-md:text-xs font-extralight flex justify-between max-md:pe-0 md:w-5/6 h-fit px-6 items-center absolute bottom-0 md:left-0 -left-5
 }
 .bottom-hero .left-side{
     @apply  w-1/12 flex flex-col items-center
 }
 .bottom-hero .right-side{
-    @apply w-11/12 h-36
+    @apply w-11/12 h-48 max-md:h-32
 }
 .hero-bottom-desc {
     @apply flex justify-start items-center
 }
 .hero-bottom-desc .left-side{
-   @apply w-8/12 p-3 flex justify-center  items-center lg:p-12 bg-[--sec-blue] h-36 
+   @apply w-8/12 p-3 flex justify-center  items-center lg:p-12 bg-[--sec-blue] h-48  max-md:h-32
 }
 
 .hero-bottom-desc .right-side{
-    @apply w-4/12 h-36 p-3 lg:p-12 flex justify-center items-center text-center relative bg-[--thr-blue]
+    @apply w-4/12 h-48 max-md:h-32 p-3 lg:p-12 flex justify-center items-center text-center relative bg-[--thr-blue]
 }
 .hero-arrow{
     @apply absolute right-1  bottom-1 max-sm:w-7 max-sm:h-7 w-10 h-10 opacity-70
@@ -80,7 +83,7 @@
     @apply max-lg:w-full w-1/2  md:ps-16 pt-16
 }
 .sec-title{
-    @apply uppercase max-md:ms-3 text-3xl md:text-5xl mt-2 mb-12 border-s-8 border-[--blue-color] font-semibold tracking-wider ps-5
+    @apply uppercase max-md:ms-3 text-[--blue-color] text-3xl md:text-5xl mt-2 mb-12 border-s-8 border-[--blue-color] font-semibold tracking-wider ps-5
 }
 .special-letter{
     @apply text-[--orange-color]
@@ -89,13 +92,13 @@
     @apply w-full bg-[--sec-blue] ps-6 lg:ps-32 pb-10 pt-6 md:pt-12
 }
 .desc-card .text-box{
-    @apply  text-[--primary-color]  font-semibold
+    @apply  text-[--primary-color]  
 }
 .desc-card .box-title{
-    @apply  text-2xl mb-3 max-sm:text-sm
+    @apply  text-2xl mb-3 max-sm:text-sm font-semibold
 }
 .desc-card .box-desc{
-    @apply  md:w-[70%] text-lg max-sm:text-xs max-sm:font-light
+    @apply  md:w-[70%] text-lg max-sm:text-xs font-extralight
 }
 
 .aboutBox .right-side{
@@ -136,10 +139,10 @@
     @apply lg:text-2xl md:text-xl uppercase md:mb-5 mb-2 font-bold text-[--primary-color]
 }
 .ourServices .image-card p{
-    @apply md:text-lg  max-lg:w-[80%] md:mb-8 mb-3  text-[--primary-color]
+    @apply md:text-lg  max-lg:w-[80%] md:mb-8 mb-3 font-extralight  text-[--primary-color]
 }
 .detailsBtn {
-    @apply py-2 md:py-5 px-8 bg-[--orange-color] text-[--primary-color] md:text-lg uppercase font-semibold opacity-80 hover:opacity-100 transition-all
+    @apply py-2 md:py-5 px-8 bg-[--orange-color] text-[--primary-color] md:text-lg uppercase font-semibold
 }
 /*our Clients*/
 .OurClients{
@@ -153,16 +156,16 @@
     @apply lg:w-1/4 sm:w-1/3 w-1/2 p-2
 }
 .clientCard{
-    @apply bg-[--primary-color] py-12 h-full
+    @apply bg-[--primary-color] py-12 h-full max-sm:py-6
 }
 .clientCard .image{
-    @apply max-w-full h-10 mx-auto mb-4
+    @apply max-w-full h-10 mx-auto mb-4 max-sm:h-5
 }
 .clientCard .date{
     @apply text-center font-extralight italic text-gray-500
 }
 .clientCard .clientName{
-    @apply text-center font-extralight italic text-gray-500
+    @apply text-center font-extralight italic text-gray-500 max-sm:text-xs
 }
 .btnCard{
     @apply bg-[--sec-blue] py-12 h-full relative flex justify-center items-center text-[--primary-color] text-lg hover:bg-[--blue-color] transition-all
@@ -191,7 +194,7 @@
 
 /*ticker-box*/
 .tickerBox {
-    @apply py-4 md:py-8 bg-[#F8F8F8] overflow-hidden
+    @apply py-5 md:py-12 bg-[#F8F8F8] overflow-hidden
 }
 
 .trickerContainer{
@@ -200,7 +203,7 @@
     
 }
 .textTicker{
-    @apply px-12 text-[#9BA5BE] text-lg md:text-2xl uppercase whitespace-nowrap font-semibold cursor-default transition-all hover:text-[--blue-color]
+    @apply px-12 text-[#9BA5BE] text-lg md:text-4xl uppercase whitespace-nowrap font-extrabold cursor-default transition-all hover:text-[--blue-color]
 }
 
 @keyframes ticker {

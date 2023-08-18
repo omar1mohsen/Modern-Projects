@@ -5,7 +5,7 @@ import { BiLogoFacebook, BiLogoLinkedin } from "react-icons/bi";
 function Footer() {
   return (
     <div className="footer">
-      <div className="upper-footer ">
+      <div className="upper-footer max-sm:font-extralight ">
         <div className="scoial">
           <p className="text-sm lg:text-xl uppercase">follow us</p>
           <span className="hrline " />
@@ -17,8 +17,8 @@ function Footer() {
         </div>
         <p>Privacy Policy</p>
       </div>
-      <div className="lower-footer">
-        <p className="footer-text">© Modern Projects. All rights reserved.</p>
+      <div className="lower-footer max-sm:font-extralight">
+        <p className="footer-text ">© Modern Projects. All rights reserved.</p>
         <p className="footer-text ">
           Developed by <span className="text-[--primary-color]">OMAR</span>
         </p>

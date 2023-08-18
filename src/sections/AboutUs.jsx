@@ -11,17 +11,13 @@ function AboutUs() {
           <div className="text-box mt-6 mb-12">
             <h3 className="box-title">SUB-TITLE</h3>
             <p className="box-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos architecto ea veritatis consectetur, eum repellendus.
-              Dolor quod dolores possimus
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
             </p>
           </div>
           <div className="text-box">
             <h3 className="box-title">SUB-TITLE</h3>
             <p className="box-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos architecto ea veritatis consectetur, eum repellendus.
-              Dolor quod dolores possimus
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
             </p>
           </div>
         </div>

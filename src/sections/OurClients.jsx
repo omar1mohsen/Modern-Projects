@@ -43,7 +43,7 @@ function OurClients() {
     <section id="OurClients" className="OurClients">
       <div className="contaniner">
         <div className="clientBox flex items-center">
-          <h3 className="sec-title">
+          <h3 className="sec-title max-sm:text-2xl">
             our <br /> <span className="special-letter">clients</span>{" "}
           </h3>
         </div>

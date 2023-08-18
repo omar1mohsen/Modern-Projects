@@ -29,8 +29,7 @@ function OurServices() {
             Vendor Inspection <br /> and Expediting
           </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
-            error cum quam quisquam enim rem!
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
           </p>
           <button className="detailsBtn">View Details</button>
         </div>
