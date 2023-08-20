@@ -12,31 +12,43 @@ function OurClients() {
       logo: client1,
       date: "2010 - 2011",
       name: "Ultrasonic testing",
+      title: "",
+      secTitle: "",
     },
     {
       logo: client2,
       date: "2010 - 2011",
       name: "Non-Destructive Testing",
+      title: "Man power supply",
+      secTitle: "",
     },
     {
       logo: client3,
       date: "2010 - 2011",
       name: "Ultrasonic Print out test",
+      title: "Hardness Test",
+      secTitle: "Heat treatment",
     },
     {
       logo: client4,
       date: "2010 - 2011",
       name: "Ultrasonic Print out test",
+      title: "Visual Inspection",
+      secTitle: "Tank Check",
     },
     {
       logo: client5,
       date: "2010 - 2011",
       name: "Non-Destructive Testing",
+      title: "",
+      secTitle: "",
     },
     {
       logo: client6,
       date: "2010 - 2011",
       name: "Lifting Equipment Inspection",
+      title: "",
+      secTitle: "",
     },
   ];
   return (
@@ -55,6 +67,8 @@ function OurClients() {
                 <p className="date">{client.date}</p>
                 <hr className="my-3 w-[90%] mx-auto" />
                 <p className="clientName">{client.name}</p>
+                <p className="clientName">{client.title}</p>
+                <p className="clientName">{client.secTitle}</p>
               </div>
             </div>
           );

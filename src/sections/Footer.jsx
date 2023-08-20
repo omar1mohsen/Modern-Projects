@@ -7,7 +7,7 @@ function Footer() {
     <div className="footer">
       <div className="upper-footer max-sm:font-extralight ">
         <div className="scoial">
-          <p className="text-sm lg:text-xl uppercase">follow us</p>
+          <p className="text-sm lg:text-lg uppercase">follow us</p>
           <span className="hrline " />
           <BiLogoFacebook className="social-icon" />
           <span className="hrline" />
@@ -15,7 +15,7 @@ function Footer() {
           <span className="hrline" />
           <AiOutlineTwitter className="social-icon" />
         </div>
-        <p>Privacy Policy</p>
+        <p className="font-extralight">Privacy Policy</p>
       </div>
       <div className="lower-footer max-sm:font-extralight">
         <p className="footer-text ">© Modern Projects. All rights reserved.</p>

@@ -27,7 +27,7 @@
     @apply   flex text-[--primary-color] px-2 py-1.5 rounded-lg 
 }
 .navLink {
-    @apply min-[1291px]:px-3 px-1 xl:text-base  md:text-sm opacity-80 font-light min-[1280px]:px-1.5  uppercase rounded-sm max-md:text-sm max-lg:text-lg py-2 max-lg:text-[--blue-color] relative hover:opacity-100 max-lg:overflow-hidden
+    @apply min-[1291px]:px-3 px-1 min-[1500px]:px-5 xl:text-base  md:text-sm opacity-80 font-light min-[1280px]:px-1.5  uppercase rounded-sm max-md:text-sm max-lg:text-lg py-2 max-lg:text-[--blue-color] relative hover:opacity-100 max-lg:overflow-hidden
 }
 .navLink::before{
     @apply  content-[""] absolute -bottom-[100%] hover:-bottom-3 transition-all rounded-xl duration-200 ease-linear opacity-0 hover:opacity-100  left-0 w-full h-1 bg-[--orange-color] 
@@ -36,12 +36,15 @@
     @apply block opacity-100
 }
 .getInTouch {
-    @apply !h-[100%] hidden lg:flex justify-center items-center text-[--primary-color] bg-[--orange-color] !flex-1 !text-center xl:px-3 px-1 xl:text-base  md:text-sm  uppercase rounded-sm max-md:text-sm max-lg:text-lg py-2
+    @apply !h-[100%] hidden lg:flex justify-center items-center text-[--primary-color] bg-[--orange-color] !flex-1  !text-center xl:px-3 px-1 xl:text-base  md:text-sm  uppercase rounded-sm max-md:text-sm max-lg:text-lg py-2 
 }
 
 /*hero-sec*/
 .hero-image{
     @apply xl:w-2/3 absolute top-[7rem] max-md:top-36 -right-20
+}
+.hero-image img {
+    @apply xl:h-screen w-full
 }
 .hero-desc {
     @apply absolute top-[33%]  md:top-[40%] left-5 md:left-16 md:translate-y-[-30%] text-[--primary-color]
@@ -80,7 +83,7 @@
     @apply flex max-lg:flex-wrap
 }
 .aboutBox .left-side {
-    @apply max-lg:w-full w-1/2  md:ps-16 pt-16
+    @apply max-lg:w-full w-1/2  md:ps-16 pt-16 overflow-hidden
 }
 .sec-title{
     @apply uppercase max-md:ms-3 text-[--blue-color] text-3xl md:text-5xl mt-2 mb-12 border-s-8 border-[--blue-color] font-semibold tracking-wider ps-5
@@ -89,7 +92,7 @@
     @apply text-[--orange-color]
 }
 .desc-card{
-    @apply w-full bg-[--sec-blue] ps-6 lg:ps-32 pb-10 pt-6 md:pt-12
+    @apply w-full bg-[--sec-blue] h-full ps-6 lg:ps-32 pb-10 pt-6 md:pt-12
 }
 .desc-card .text-box{
     @apply  text-[--primary-color]  
@@ -100,10 +103,31 @@
 .desc-card .box-desc{
     @apply  md:w-[70%] text-lg max-sm:text-xs font-extralight
 }
-
 .aboutBox .right-side{
-    @apply max-lg:w-full w-1/2
+    @apply max-lg:w-full w-1/2 relative overflow-hidden
 }
+/* .ourStats{
+    @apply w-1/2 h-full bg-[--blue-color] absolute top-0 right-0 py-32 flex flex-col justify-between items-start
+}
+.ourStats .stats-contaniner{
+    @apply flex  items-center mx-auto space-x-5  
+}
+.ourStats .stats-contaniner:not(:first-child){
+    @apply -mt-12
+}
+.stats-contaniner .stats-num{
+@apply text-[--primary-color] font-bold
+}
+.stats-contaniner .stats-num span:first-child{
+@apply text-2xl mb-1 block
+}
+.stats-contaniner .stats-num span:last-child{
+@apply opacity-30 block uppercase tracking-wide
+}
+.stats-line{
+    @apply rotate-180 bg-[--primary-color] w-[1px] h-36 ms-32 -me-2 -mt-12
+    absolute top-[75%] -left-1 
+} */
 /*our services*/
 .ourServices{
     @apply relative
@@ -173,13 +197,13 @@
 
 /*footer*/
 .upper-footer{
-@apply bg-[--blue-color] flex justify-between items-center py-5 px-2 lg:px-12  text-[--primary-color]
+@apply bg-[--blue-color] flex justify-between items-center py-5 px-2 lg:px-12  text-[--primary-color] max-sm:text-xs 
 }
 .scoial{
     @apply  flex items-center
 }
 .hrline{
-    @apply  h-0.5 px-2 md:px-7 bg-[--primary-color] my-auto block mx-2 md:mx-5
+    @apply  h-0.5 px-3 md:px-7 bg-[--primary-color] my-auto block mx-2
 }
 .social-icon{
     @apply w-4 h-4 lg:w-7 lg:h-7
@@ -188,7 +212,7 @@
     @apply bg-[#0D235D] flex justify-between items-center py-5 px-2 lg:px-12  text-[--primary-color]
 }
 .footer-text{
-    @apply text-gray-400 text-xs md:text-lg
+    @apply text-gray-400 text-xs md:text-lg lg:tracking-widest
 }
 
 

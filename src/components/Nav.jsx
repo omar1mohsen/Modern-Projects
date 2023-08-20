@@ -38,7 +38,7 @@ function Nav() {
 
       {/*btn-nav in small screens */}
       <NavBtn isOpen={isOpen} setIsOpen={setIsOpen} />
-      <div className={`${isOpen ? "nav-list" : "max-lg:hidden"}`}>
+      <div className={`${isOpen ? "nav-list" : "max-lg:hidden lg:!flex-grow-0"}`}>
         <ul
           className={`navLinks ${isOpen && "max-lg:flex-col  max-sm:h-[70Vh]"}`}
         >
