@@ -68,11 +68,11 @@
     @apply flex justify-start items-center
 }
 .hero-bottom-desc .left-side{
-   @apply w-8/12 p-3 flex justify-center  items-center lg:p-12 bg-[--sec-blue] h-48  max-md:h-32
+   @apply w-8/12 lg:pe-36 lg:font-normal p-3 flex justify-center  items-center lg:p-12 bg-[--sec-blue] h-48  max-md:h-32
 }
 
 .hero-bottom-desc .right-side{
-    @apply w-4/12 h-48 max-md:h-32 p-3 lg:p-12 flex justify-center items-center text-center relative bg-[--thr-blue]
+    @apply w-4/12 h-48 max-md:h-32 lg:font-normal p-3 lg:p-12 flex justify-center items-center text-center relative bg-[--thr-blue]
 }
 .hero-arrow{
     @apply absolute right-1  bottom-1 max-sm:w-7 max-sm:h-7 w-10 h-10 opacity-70
